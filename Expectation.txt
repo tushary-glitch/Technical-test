@@ -1,0 +1,21 @@
+Source File: records.json - has records in following the format,
+order_id": 
+"user_id": 
+"currency": 
+"items": 
+"discounts": 
+"total_amount": 
+"created_at": 
+"updated_at": 
+"metadata": {"channel"}
+
+Can you validate the records based on,
+Required fields exist
+Total_amount ≈ sum(price * qty) − discounts (±0.01 tolerance)
+Currency in {USD, EUR, INR}
+
+Add more validations,
+Any other functional issue you see
+Any security risk you see
+
+Generate a report for overall accuracy, the records that failed the 3 validations mentioned above (as well as any new validation you can think of - functional as well as security).
